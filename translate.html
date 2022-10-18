@@ -1,0 +1,43 @@
+---
+layout: default
+title: translate
+---
+
+<h1 class="notranslate">My Web Page</h1>
+
+<p class="notranslate">Translate a phrase</p>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ includedLanguages: 'en,es,fr,pt', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL }, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({ includedLanguages: 'en,es,fr,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<p class="notranslate">You can translate the content of this paragraph by selecting a language in the select box.</p>
+
+
+<p class="notranslate">Enter your phrase:</p>
+<textarea id="myTextarea"></textarea>
+
+<!--<p><button type="button" onclick="myFunction()" class="notranslate">Translate it</button></p>-->
+<p class="notranslate">Choose the language</p>
+<div id="google_translate_element" onclick="myFunction()"></div>
+<p id="myTrans"></p>
+
+
+<script>
+function myFunction() {
+let myPhrase = document.getElementById("myTextarea").value;
+document.getElementById('myTrans').innerHTML = myPhrase;
+}
+</script>
+
