@@ -25,12 +25,15 @@ function googleTranslateElementInit() {
 
 <p class="notranslate">Enter your phrase and choose a language:</p>
 <div class="row">
-  <div class="col p-3 bg-primary text-white"><textarea id="myTextarea"></textarea></div>
-  <div class="col p-3 bg-dark text-white"> <span id="myTrans"></span></div>
+  <div class="col p-3 bg-light text-white">
+    <div id="google_translate_element" onclick="myFunction()"></div>
+    <textarea id="myTextarea" style="width:100%;"></textarea>
+  </div>
+  <div class="col p-3 bg-light text-black"><span id="myTrans"></span></div>
 </div>
 
 <!--<p><button type="button" onclick="myFunction()" class="notranslate">Translate it</button></p>-->
-<div id="google_translate_element" onclick="myFunction()"></div>
+
 
 <script>
 function myFunction() {
