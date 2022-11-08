@@ -1,3 +1,5 @@
 .myBanner {
   background: #1d559d;
+  background-image: linear-gradient(to left, red, blue);
+  color:white;
 }
